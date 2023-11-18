@@ -73,3 +73,92 @@ h6 {
   --dark-gray: hsl(0, 0%, 59%);
   --white: #fff;
 }
+
+html,
+body {
+  background: var(--dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pattern {
+  position: absolute;
+  width: 900px;
+}
+.top {
+  bottom: 50%;
+  right: 50%;
+}
+.bottom {
+  top: 50%;
+  left: 50%;
+}
+.card {
+  height: 375px;
+  width: 350px;
+  position: relative;
+  background: var(--white);
+  border-radius: 15px;
+}
+.top img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.profile-pic {
+  position: absolute;
+  top: 25%;
+  left: 38%;
+}
+.profile-pic img {
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
+.card-body {
+  margin-top: 2.5rem;
+}
+.card-body h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.card-body h1 > span {
+  color: var(--dark-gray);
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.location {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--dark-gray);
+}
+hr {
+  margin-top: 1.75rem;
+  opacity: 0.25;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.col {
+  margin: 0 1rem;
+  text-align: center;
+}
+.count {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+.detail {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
